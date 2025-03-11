@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'background': '#1e1e1e',
-        'text': '#ffffff',
-        'description': '#cccccc',
-        'linkedin': '#0077b5',
+        background: '#1e1e1e',
+        text: '#ffffff',
+        description: '#cccccc',
+        linkedin: '#0077b5',
       },
       fontFamily: {
-        'ubuntu': ['Ubuntu', 'sans-serif'],
+        ubuntu: ['Ubuntu', 'sans-serif'],
       },
     },
   },
@@ -18,4 +18,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
