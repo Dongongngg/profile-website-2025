@@ -152,6 +152,7 @@
   <body class="text-white font-ubuntu">
     <div
       class="container mx-auto p-5 relative z-10 text-center flex flex-col items-center justify-center"
+      style="height: 90%"
     >
       <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-600">
         Jingfu(James) Dong
@@ -245,13 +246,12 @@
               if (input === 'clear') {
                 outputElement.innerHTML = '';
               } else {
-                outputElement.innerHTML += `${commands[input]}\n`;
+                outputElement.innerHTML += commands[input];
               }
             } else {
               outputElement.innerHTML += `Command not found: ${input}\n`;
             }
             inputElement.value = '';
-            outputElement.scrollTop = outputElement.scrollHeight;
           }
         }
       });
