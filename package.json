@@ -1,0 +1,20 @@
+{
+  "name": "profile-website-2025",
+  "version": "1.0.0",
+  "description": "A personal profile website using Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./styles/style.css -o ./styles/tailwind-output.css",
+    "watch": "npx tailwindcss -i ./styles/style.css -o ./styles/tailwind-output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
