@@ -8,21 +8,29 @@
     <title>James Dong - Full-Stack Engineer</title>
     <meta
       name="description"
-      content="James Dong - Full-Stack Engineer specializing in Web Development and API Integration."
+      content="James Dong - Senior Full-Stack Engineer with expertise in scalable web applications, cloud architecture, and enterprise solutions. Specializing in React, Node.js, and AWS technologies."
     />
     <meta
       name="keywords"
-      content="James Dong, Full-Stack Engineer, Web Development, API Integration, TypeScript, JavaScript, React, Node.js"
+      content="James Dong, Senior Full-Stack Engineer, Web Development, Enterprise Solutions, Cloud Architecture, React, Node.js, AWS, Microservices, Docker, Database Design, RESTful APIs, GraphQL, System Architecture, DevOps, CI/CD, Frontend Development, Backend Development, Full Stack Development, Software Engineering, Cloud Computing, Enterprise Applications, B2B Solutions, Financial Technology, Payment Systems, Banking APIs, Performance Optimization, Scalable Architecture, Technical Leadership, Team Management, Sydney Developer, Australian Tech, FinTech Expert"
     />
     <meta name="author" content="James Dong" />
-    <meta property="og:title" content="James Dong Dev" />
+    <meta property="og:title" content="James Dong - Senior Full-Stack Engineer" />
     <meta
       property="og:description"
-      content="James Dong - Full-Stack Engineer specializing in Web Development and API Integration."
+      content="Senior Full-Stack Engineer specializing in scalable web applications, cloud architecture, and enterprise solutions. Expert in React, Node.js, and AWS technologies."
     />
     <meta property="og:image" content="images/photo.jpg" />
-    <meta property="og:url" content="https://www.yourwebsite.com" />
+    <meta property="og:url" content="https://james-dong-profile-website-2025.vercel.app/" />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="James Dong - Senior Full-Stack Engineer" />
+    <meta
+      name="twitter:description"
+      content="Senior Full-Stack Engineer specializing in scalable web applications and cloud architecture."
+    />
+    <meta name="twitter:image" content="images/photo.jpg" />
+    <link rel="canonical" href="https://james-dong-profile-website-2025.vercel.app/" />
     <style>
       @keyframes gradientBackground {
         0% {
@@ -89,6 +97,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        gap: 1.5%;
         z-index: 1;
         padding: 15px;
         background: rgba(0, 0, 0, 0.4);
@@ -108,7 +117,6 @@
         cursor: pointer;
         transition: all 0.3s ease;
         text-decoration: none;
-        margin-bottom: 12px;
         padding: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
@@ -169,11 +177,14 @@
           justify-content: center;
           padding: 10px;
           background: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(10px);
+          z-index: 2;
         }
         .desktop-icon {
           width: 40px;
           height: 40px;
           margin: 0 6px;
+          padding: 4px;
         }
         .desktop-icon img {
           width: 32px;
@@ -181,10 +192,67 @@
         }
         .container {
           padding: 0 10px;
+          top: 60px;
         }
         .terminal {
-          min-width: 100%;
-          margin: 10px 0;
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+          height: calc(75vh - 100px);
+          max-height: calc(75vh - 100px);
+          top: 200px;
+          transform: none;
+          left: 0;
+          border-radius: 0;
+          box-sizing: border-box;
+          padding: 0;
+        }
+        .terminal-body {
+          padding: 8px;
+          width: 100%;
+          box-sizing: border-box;
+          height: calc(100% - 32px);
+        }
+        .terminal-header {
+          padding: 6px 8px;
+          box-sizing: border-box;
+          height: 28px;
+        }
+        .terminal-input-wrapper {
+          padding: 0 8px;
+          box-sizing: border-box;
+          margin-top: 4px;
+        }
+        .terminal-output {
+          padding: 4px 8px;
+          box-sizing: border-box;
+        }
+        .ascii-art {
+          font-size: 8px;
+        }
+        .welcome-text {
+          font-size: 12px;
+          padding: 0 10px;
+        }
+        .terminal-input {
+          font-size: 12px;
+        }
+        .terminal-prompt {
+          font-size: 12px;
+        }
+        .top-bar {
+          height: 50px;
+        }
+        .date-time {
+          font-size: 12px;
+        }
+        .system-tray-icon {
+          width: 14px;
+          height: 14px;
+        }
+        .workspace {
+          width: 6px;
+          height: 6px;
         }
       }
       .terminal {
@@ -195,7 +263,6 @@
         font-family: 'Ubuntu Mono', monospace;
         border-radius: 8px;
         width: 100%;
-        min-width: 700px;
         max-width: 1000px;
         max-height: calc(100vh - 80px);
         overflow-y: scroll;
@@ -206,6 +273,7 @@
         transform: translate(-50%, -50%);
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* IE and Edge */
+        box-sizing: border-box;
       }
       .terminal::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
@@ -219,7 +287,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(45, 45, 45, 0.95);
+        background-color: #2d2d2d;
         padding: 8px 12px;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
@@ -227,6 +295,7 @@
         border-bottom: 1px solid #1a1a1a;
         height: 32px;
         box-sizing: border-box;
+        z-index: 10;
       }
       .terminal-header .buttons {
         display: flex;
@@ -393,7 +462,16 @@
         align-items: center;
         gap: 0.5em;
       }
+      .mobile-only {
+        display: none;
+      }
       @media (max-width: 768px) {
+        .desktop-only {
+          display: none;
+        }
+        .mobile-only {
+          display: block;
+        }
         .ascii-art {
           font-size: 10px;
         }
@@ -438,9 +516,34 @@
       .workspace.active {
         background: rgba(255, 255, 255, 0.8);
       }
+      .app-launcher {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        padding: 8px;
+      }
+      .app-launcher img {
+        width: 96px;
+        height: 96px;
+        opacity: 0.8;
+      }
+      @media (max-width: 768px) {
+        .app-launcher {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body class="text-white font-ubuntu">
+    <div class="app-launcher">
+      <img src="images/icons/grid.svg" alt="Applications" />
+    </div>
     <div class="top-bar">
       <div class="top-bar-left">
         <div class="workspace-switcher">
@@ -453,9 +556,9 @@
       <div class="date-time">12:34 PM</div>
       <div class="top-bar-right">
         <div class="system-tray">
-          <img src="images/network.svg" alt="Network" class="system-tray-icon" />
-          <img src="images/volume.svg" alt="Volume" class="system-tray-icon" />
-          <img src="images/battery.svg" alt="Battery" class="system-tray-icon" />
+          <img src="images/icons/network.svg" alt="Network" class="system-tray-icon" />
+          <img src="images/icons/volume-high.svg" alt="Volume" class="system-tray-icon" />
+          <img src="images/icons/battery-full.svg" alt="Battery" class="system-tray-icon" />
         </div>
       </div>
     </div>
@@ -466,7 +569,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="images/linkedin.svg" alt="linkedin" width="80" height="80" />
+        <img src="images/icons/linkedin.svg" alt="linkedin" width="80" height="80" />
       </a>
       <a
         href="https://www.seek.com.au/profile/jingfu-dong-hBSDC1xGT8"
@@ -474,10 +577,10 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="images/seek.svg" alt="Seek" width="80" height="80" />
+        <img src="images/icons/seek.svg" alt="Seek" width="80" height="80" />
       </a>
       <a href="https://profile.indeed.com/p/oile62u" class="desktop-icon" target="_blank" rel="noopener noreferrer">
-        <img src="images/indeed.svg" alt="Indeed" width="80" height="80" />
+        <img src="images/icons/indeed.svg" alt="Indeed" width="80" height="80" />
       </a>
     </div>
     <div class="container">
@@ -492,19 +595,36 @@
         </div>
         <div class="terminal-body">
           <div id="output" class="terminal-output">
-            <pre class="ascii-art">
+            <pre class="ascii-art desktop-only">
      ██  █████  ███    ███ ███████ ███████     ██████   ██████  ███    ██  ██████  
      ██ ██   ██ ████  ████ ██      ██          ██   ██ ██    ██ ████   ██ ██       
      ██ ███████ ██ ████ ██ █████   ███████     ██   ██ ██    ██ ██ ██  ██ ██   ███ 
 ██   ██ ██   ██ ██  ██  ██ ██           ██     ██   ██ ██    ██ ██  ██ ██ ██    ██ 
  █████  ██   ██ ██      ██ ███████ ███████     ██████   ██████  ██   ████  ██████  
-                                                                                                                                                     
             </pre>
+            <pre class="ascii-art mobile-only">
+    ██  █████  ███    ███ ███████ ███████
+    ██ ██   ██ ████  ████ ██      ██     
+    ██ ███████ ██ ████ ██ █████   ███████
+██  ██ ██   ██ ██  ██  ██ ██           ██
+ ████  ██   ██ ██      ██ ███████ ███████
+            </pre>
+            <pre class="ascii-art mobile-only">
+██████   ██████  ███    ██  ██████
+ ██   ██ ██    ██ ████   ██ ██      
+  ██   ██ ██    ██ ██ ██  ██ ██   ███ 
+  ██   ██ ██    ██ ██  ██ ██ ██    ██ 
+ ██████   ██████  ██   ████  ██████ 
+                      </pre
+            >
             <div class="welcome-section">
               <div class="welcome-text">
-                <span>Welcome to my home page!</span>
-                <span>This terminal is for fetching my resume-related information.</span>
-                <span>Type 'help' to see available commands.</span>
+                <span>Welcome to my professional portfolio!</span>
+                <span
+                  >I'm a Senior Full-Stack Engineer passionate about building scalable web applications and cloud-native
+                  solutions.</span
+                >
+                <span>Type 'help' to explore my experience and technical expertise.</span>
               </div>
             </div>
           </div>
@@ -661,7 +781,7 @@
           '▹ Location: Sydney, Australia\n' +
           '▹ Mobile: 0415767286\n' +
           '▹ LinkedIn: https://www.linkedin.com/in/jingfu-dong-james/\n\n' +
-          'Feel free to reach out for collaboration opportunities!',
+          "I am currently open to new opportunities and collaborations. Let's connect and build something amazing together!",
         cd: 'this is fake terminal :)',
         ls: 'this is fake terminal :)',
         rm: 'this is fake terminal :)',
