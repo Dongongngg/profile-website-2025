@@ -85,7 +85,7 @@
         display: flex;
         align-items: center;
         padding: 0 15px;
-        z-index: 2;
+        z-index: 1;
         font-size: 13px;
         color: white;
       }
@@ -134,7 +134,7 @@
       }
       .container {
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -271,12 +271,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
         box-sizing: border-box;
+        z-index: 3;
       }
       .terminal::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none;
       }
       .terminal-header {
         cursor: move;
@@ -412,7 +413,6 @@
         color: #00ff00;
         margin-right: 0.5rem;
       }
-      /* Custom scrollbar styles */
       .terminal::-webkit-scrollbar {
         width: 8px;
       }
@@ -426,12 +426,10 @@
       .terminal::-webkit-scrollbar-thumb:hover {
         background: #5a5a5a;
       }
-      /* Selection styles */
       ::selection {
         background: #00ff00;
         color: #300a24;
       }
-      /* Placeholder styles */
       .terminal-input::placeholder {
         color: #666;
       }
