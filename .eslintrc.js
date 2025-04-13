@@ -10,13 +10,13 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    // 错误预防
+    // stylistic issues
     'no-unused-vars': 'warn',
     'no-constant-condition': 'warn',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-debugger': 'warn',
 
-    // 最佳实践
+    // best practices
     eqeqeq: ['error', 'always'],
     'no-var': 'error',
     'prefer-const': 'error',

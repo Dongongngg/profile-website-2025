@@ -91,38 +91,36 @@ Available commands:
 ▹ help    - Show available commands
 ▹ exp     - Show work experience
 ▹ stack   - Show tech stack
-▹ contact - Show contact information
-▹ clear   - Clear terminal`,
+▹ contact - Show contact information`,
   exp: `
 [Work Experience]
 
 Senior Full-Stack Engineer @ Forexco (Contract)
-▹ Architected and maintained cloud infrastructure to ensure 99.9% system uptime and reliability
-▹ Delivered expert technical support and implemented critical bug fixes across systems
-▹ Spearheaded system optimization initiatives, resulting in 40% improved performance
+▹ Architected and optimized AWS infrastructure for B2B treasury and FX platforms, maintaining 99.9% uptime
+▹ Led technical support and continuous improvement initiatives across legacy systems
+▹ Implemented performance optimizations reducing response times by 40% across core services
 
 Head of Development @ Prime Treasury (Full-Time)
-▹ Led end-to-end development of an enterprise B2B treasury management platform, driving 200% YoY revenue growth
-▹ Built and mentored a high-performing development team of 5 engineers, establishing best practices
-▹ Successfully integrated multiple payment gateways and banking APIs, processing $10M+ monthly transactions
-▹ Redesigned broker/trade analysis features, improving user engagement by 65%
-▹ Established strategic alignment between technical initiatives and business objectives
+▹ Led development of enterprise treasury platform processing $100M+ annual transactions
+▹ Built and mentored an engineering team of 4, implementing robust CI/CD practices
+▹ Designed microservice architecture handling 200+ users and 10+ enterprise clients
+▹ Automated 80% of treasury operations through API integrations and workflow automation
+▹ Established scalable development practices aligned with business objectives
 
 Full-Stack Developer @ Forexco (Full-Time)
-▹ Engineered robust user interfaces, RESTful APIs, and automated reporting systems
-▹ Drove technical decisions and implementations through close collaboration with stakeholders
-▹ Optimized database performance and implemented comprehensive error handling systems
-▹ Created detailed technical documentation and user guides, reducing support tickets by 40%
+▹ Delivered 50+ features using React and TypeScript with comprehensive test coverage
+▹ Optimized backend services achieving sub-200ms response times across critical APIs
+▹ Enhanced FX analytics dashboard improving data processing efficiency by 60%
+▹ Developed automated reporting suite reducing manual workload by 80%
 
 Full-Stack Developer @ Ishare Incubator (Internship)
-▹ Developed responsive user interfaces and implemented complex business logic using React.js
-▹ Designed and built scalable REST APIs with Node.js, achieving 95% test coverage`,
+▹ Engineered responsive React.js interfaces implementing complex business logic
+▹ Designed and developed Node.js REST APIs with 95% test coverage`,
   stack: `
 [Technical Stack]
 
 Frontend Development
-▹ TypeScript
-▹ JavaScript (ES6+)
+▹ TypeScript/JavaScript
 ▹ React
 ▹ Next.js
 
